@@ -7,7 +7,7 @@ import * as cors from 'cors';
 dontenv.config();
 
 // Imports Routes
-import router from '../../modules/users/infra/routes/routes';
+import router from '../../modules/users/interface-adapters/routes/routes';
 
 
 class App{
