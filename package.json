@@ -2,11 +2,11 @@
   "name": "setup_nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
     "build": "tsc && tsc-alias",
     "start": "node dist/index.js",
-    "start:dev": "nodemon --watch 'src/' --exec 'ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_module src/shared/core/server.ts' -e ts",
+    "start:dev": "nodemon --watch 'src/' --exec ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_module src/shared/core/server.ts -e ts",
     "husky:prepare": "husky install",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
@@ -17,7 +17,7 @@
     "prisma:migrate": "npx prisma migrate dev --schema=./src/shared/infra/database/prisma/schema.prisma"
   },
   "keywords": [],
-  "author": "",
+  "author": "David Marques",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.1.1",
