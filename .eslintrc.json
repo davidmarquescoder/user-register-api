@@ -14,8 +14,10 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": ["./tsconfig.json"]
+    "project": ["./tsconfig.json"],
+    "extraFileExtensions": [".prisma"]
   },
+  "ignorePatterns": ["**/*.prisma"],
   "plugins": ["@typescript-eslint"],
   "rules": {}
 }
