@@ -5,9 +5,8 @@
   "main": "server.ts",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "start": "node dist/index.js",
+    "start": "node dist/shared/core/server.js",
     "start:dev": "nodemon --watch 'src/' --exec ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_module src/shared/core/server.ts -e ts",
-    "husky:prepare": "husky install",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:staged": "jest --findRelatedTests",
