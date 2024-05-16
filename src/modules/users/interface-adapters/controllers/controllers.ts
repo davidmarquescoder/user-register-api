@@ -16,7 +16,7 @@ export default class Controllers implements ControllersInterface {
   }
 
   async create(request: Request, response: Response) {
-    return response.status(200).json({});
+    return response.status(201).json({});
   }
 
   async update(request: Request, response: Response) {
