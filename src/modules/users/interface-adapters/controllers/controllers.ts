@@ -1,7 +1,7 @@
-// Imports
+// ANCHOR imports
 import { Request, Response } from 'express';
 
-// Contracts Imports
+// Contracts ANCHOR imports
 import { ControllersInterface } from '../../domain/contracts/controllersInterface';
 import { UsecasesInterface } from '../../domain/contracts/useCasesInterface';
 
@@ -18,10 +18,11 @@ export default class Controllers implements ControllersInterface {
   }
 
   async create(request: Request, response: Response): Promise<Response> {
-    const data = (({ name, email, password, phone }) => ({
+    const data = (({ name, email, password, confirmPassword, phone }) => ({
       name,
       email,
       password,
+      confirmPassword,
       phone,
     }))(request.body);
 

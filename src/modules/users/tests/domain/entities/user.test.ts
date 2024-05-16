@@ -1,4 +1,4 @@
-// Imports
+// ANCHOR imports
 import { User } from '@/modules/users/domain/entities/user';
 
 const userData = {

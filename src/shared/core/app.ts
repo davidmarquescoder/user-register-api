@@ -1,4 +1,4 @@
-// Modules Imports
+// ANCHOR imports
 import { Request, Response } from 'express';
 import * as express from 'express';
 import * as dontenv from 'dotenv';
@@ -7,7 +7,7 @@ import * as cors from 'cors';
 // Dotenv Config
 dontenv.config();
 
-// Imports Routes
+// Routes
 import router from '@/modules/users/interface-adapters/routes/routes';
 
 class App {
