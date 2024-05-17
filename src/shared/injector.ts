@@ -1,4 +1,3 @@
-// ANCHOR imports
 import Controllers from '@/modules/users/interface-adapters/controllers/controllers';
 import UseCases from '@/modules/users/application/use-cases/useCases';
 

@@ -1,4 +1,3 @@
-// ANCHOR imports
 import * as request from 'supertest';
 import app from '../core/app';
 import * as dotenv from 'dotenv';

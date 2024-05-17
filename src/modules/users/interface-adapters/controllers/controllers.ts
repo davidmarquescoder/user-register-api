@@ -1,7 +1,6 @@
-// ANCHOR imports
 import { Request, Response } from 'express';
 
-// Contracts ANCHOR imports
+// Contracts
 import { ControllersInterface } from '../../domain/contracts/controllersInterface';
 import { UsecasesInterface } from '../../domain/contracts/useCasesInterface';
 
@@ -27,7 +26,7 @@ export default class Controllers implements ControllersInterface {
     }))(request.body);
 
     const user = await this.useCases.create(data);
-    return response.status(201).json({ user });
+    return response.status(201).json(user);
   }
 
   async update(request: Request, response: Response): Promise<Response> {

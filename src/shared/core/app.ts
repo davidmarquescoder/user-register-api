@@ -1,4 +1,3 @@
-// ANCHOR imports
 import { Request, Response } from 'express';
 import * as express from 'express';
 import * as dontenv from 'dotenv';

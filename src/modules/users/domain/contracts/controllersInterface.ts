@@ -1,4 +1,3 @@
-// ANCHOR imports
 import { Request, Response } from 'express';
 
 export interface ControllersInterface {

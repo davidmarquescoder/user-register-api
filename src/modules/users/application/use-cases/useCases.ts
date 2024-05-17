@@ -1,4 +1,3 @@
-// ANCHOR ANCHOR imports
 import { UsecasesInterface } from '../../domain/contracts/useCasesInterface';
 import { User } from '../../domain/entities/user';
 import { createDTO, indexDTO } from '../DTOs/dataTransferObjects';
@@ -17,22 +16,8 @@ export default class UseCases implements UsecasesInterface {
     ];
   }
 
-  async create({
-    name,
-    email,
-    password,
-    confirmPassword,
-    phone,
-  }: createDTO): Promise<indexDTO> {
-    const data = {
-      name,
-      email,
-      password,
-      phone,
-    };
-
-    // TODO pending validations
-    confirmPassword;
+  async create(data: createDTO): Promise<indexDTO> {
+    // TODO >> pending validations
 
     const user = new User(data);
 
